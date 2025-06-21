@@ -45,3 +45,25 @@ function postComment() {
 }
 
 loadComments();
+
+// Audio player controls
+const audio = document.getElementById("audio");
+const playPauseBtn = document.getElementById("playPauseBtn");
+const volumeControl = document.getElementById("volumeControl");
+
+// Play or pause audio
+playPauseBtn.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.play();
+    playPauseBtn.textContent = "⏸ Pause";
+  } else {
+    audio.pause();
+    playPauseBtn.textContent = "▶️ Play";
+  }
+});
+
+// Change volume
+volumeControl.addEventListener("input", () => {
+  audio.volume = volumeControl.value;
+});
+
