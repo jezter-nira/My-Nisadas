@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dreamy Quote 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <button id="toggleMode" class="mode-btn">🌙</button>
+
+    <h1 class="title">🌌 Dreamy Night Quote</h1>
+
+    <div class="quote-box">
+      <button onclick="readQuote()" class="voice-btn">🔊</button>
+      <div id="quote" class="quote">"The darkest nights produce the brightest stars."</div>
+      <div class="author">– John Green</div>
+    </div>
+
+    <div class="comment-box">
+      <h3>💬 Your Thoughts</h3>
+      <textarea id="commentInput" placeholder="Write your comment..."></textarea>
+      <button onclick="postComment()">Post</button>
+      <div class="comments-list" id="commentsList"></div>
+    </div>
+
+    <div class="nav-buttons">
+      <a href="index.html">⬅️ Prev Quote</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

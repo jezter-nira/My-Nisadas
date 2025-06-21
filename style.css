@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+body.light-mode {
+  background: linear-gradient(to bottom, #e3f2fd, #bbdefb);
+  color: #111;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.quote-box {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.quote-box:hover {
+  transform: scale(1.02);
+}
+
+.voice-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #90caf9;
+}
+
+.quote {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #e3f2fd;
+}
+
+.author {
+  font-weight: bold;
+  color: #b3e5fc;
+}
+
+.comment-box {
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+}
+
+textarea {
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  resize: none;
+  background: #fff1;
+  color: #fff;
+}
+
+body.light-mode textarea {
+  background: #f9f9f9;
+  color: #111;
+}
+
+button {
+  background: #4fc3f7;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.comments-list {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.comment {
+  background: rgba(255,255,255,0.12);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  animation: fadeIn 0.4s ease;
+  color: #fff;
+}
+
+.nav-buttons a {
+  display: inline-block;
+  margin-top: 30px;
+  color: #81d4fa;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.mode-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #ffffff22;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 10px;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: scale(0.9);}
+  to {opacity: 1; transform: scale(1);}
+}
